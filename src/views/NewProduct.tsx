@@ -3,6 +3,7 @@ import {
     Link,
     useActionData,
     ActionFunctionArgs,
+    redirect,
 } from "react-router-dom";
 import { ErrorMessage } from "../components/ErrorMessage";
 import { addProduct } from "../services/ProductService";
@@ -19,9 +20,9 @@ export const action = async ({ request }: ActionFunctionArgs) => {
         return error;
     }
 
-    addProduct(data);
+    await addProduct(data);
 
-    return {};
+    return redirect("/");
 };
 
 export const NewProduct = () => {
