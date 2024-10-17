@@ -67,7 +67,7 @@ export const ProductDetails = ({ product }: ProductDetailProps) => {
                         <input
                             type="submit"
                             value="Delete"
-                            className="bg-red-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center"
+                            className="bg-red-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center hover:cursor-pointer"
                         />
                     </Form>
                 </div>
